@@ -1,8 +1,8 @@
 <?php
 
 /*
- * Copyright (c) 2024. Encore Digital Group.
- * All Right Reserved.
+ * Copyright (c) 2024-2025. Encore Digital Group.
+ * All Rights Reserved.
  */
 
 namespace PHPGenesis\Common\Support;
@@ -37,7 +37,7 @@ class IdeHelper
             && isset($composer->extra->phpgenesis->hasApplicationDirectory)
             && $composer->extra->phpgenesis->hasApplicationDirectory
         ) {
-            IdeHelper::publishToProjectRoot(phpgenesis_common_src(self::EDITOR_CONFIG_PATH), "../.editorconfig", $isPhpGenesis, $usingPhpGenesis);
+            IdeHelper::publishToProjectRoot(phpgenesis_common_src(self::EDITOR_CONFIG_PATH), "../pint.json", $isPhpGenesis, $usingPhpGenesis);
         }
 
         IdeHelper::publishToProjectRoot(phpgenesis_common_src(self::PINT_PATH), "pint.json", $isPhpGenesis, $usingPhpGenesis);
